@@ -1,0 +1,67 @@
+1. Manager
+	View Stuck in the Movie's revenues from ticket sales
+	View Stuck in the Movie's revenues from food orderd
+	View Stuck in the Movie's revenues from beverage orders
+	View Stuck in the Movie's revenues from advertisements
+	View Stuck in the Movie's revenues from partnership
+	View Stuck in the Movie's revenues from ticket class
+	
+	View Stuck in the Movie’s movie schedule
+	View Stuck in the Movie’s facilities and equipment
+
+	View Stuck in the Movie membership
+	View Stuck in the Movie employee (can check resign based on contract)
+	data visualization based on time period
+	filter data based on important attributes
+
+2. Human Resource Department
+	managing anything related to Stuck in the Movie’s employees.
+	view employees’ personal information
+	manage the employees’ recruitment
+	warning letter
+	fired if 3x warning letter
+	salary adjustment
+	sets employees’ working time
+ Employee
+	can request change working time
+	can submit personal leave request
+3. Accounting and Finance Department
+	managing anything related to Stuck in the Movie’s cash flow
+	calculating taxes
+	accounting and finance department, together with the manager, will review the fund request to be accepted,
+
+4. Storage Department
+	managing anything related to Stuck in the Movie’s facility and equipment
+	in charge of purchasing new facilities and equipment requested by other departments
+	calculate the shortage or excess money based on the actual price and the fund that has been approved by the accounting and finance department
+	If facilities or equipment is damaged, the storage department will try to check and fix it
+	
+5. External Department
+	maintaining relationships 
+External Parties
+	movie producers -> knowing the details of the movie.
+	food and beverages suppliers -> search for suppliers who can work together to support the business operations of the Stuck in the Movie cafe
+	advertising partner ->  search for companies that want to advertise on Stuck in the Movie.
+
+6. Promotion and Event Department
+	managing promo or event that is available
+
+7. Movie Department
+	 a. Schedule Division
+		responsible for scheduling movies
+	b. Front Office Division
+		responsible for serving customers
+	c. Operation Division
+		responsible for preparing the theater’s rooms
+
+8. Cafe Department
+	a. Front Office Division
+		responsible for serving customers
+	b. kitchen division
+		responsible for making foods and/or beverages
+
+9. Administrator Department
+	responsible for anything related to the Stuck in the Movie system.
+
+
+
