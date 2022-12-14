@@ -1,0 +1,164 @@
+Manager: (done)
+- terlalu detail gk ush di detail di bagian view
+- gk ush verify request
+- view report untuk manager
+
+HRD : (done)
+- gk ada manage (bkn menu) -> view employee
+- manage recruitment -> external
+- view warning letter
+
+
+include -> fragments (panjang)
+
+Accounting: (done)
+- Manage -> ganti jadi view expesne dan revenue
+- view fund req
+
+Storage: (done)
+- Manage -> ganti jad iview
+- Jangan maintain -> jadi update
+ 
+Employee: (done)
+- req fund
+
+Movie Department (done)
+- generate schedule
+- use voucher
+
+Cafe Department (done)
+- acc order
+- udpate order
+
+External Parties -> bkn internal (done)
+
+External Depart (done)
+- contact disesuaikan
+
+login knp gk msk
+Admin:
+admin gk ush tarik garis 1 1 (done)
+set,view, update authorization (done)
+
+Use Case Desc
+1. 
+- nama use case sesuain lagi
+- Gk ush acc atau reject
+- manage employee gk ada
+- preconditions -> cari lagi
+- exception conditions -> cari lagi
+
+2. 
+- brief desc -> gk ush create member
+- post conditions : transaction gk ada
+3.
+- disesuain lagi kalo klik send email
+- triggering event gk ush generate
+- brief di detailin lg
+- post condition sesuain
+- flow sama exception sesuain 
+5.
+- stake holders sama related use case sesuain lagi
+- precondition masih kurang sama cari lagi
+- related use case sesuain lagi
+- preconditions masih kurang
+- post conditions masih kurang
+- exception sesuain lagi
+
+6. 
+- nama use case ganti jadi record
+- disesuain lagi karena salah flow tadi
+
+7. 
+- triggering diperjelas (done)
+- exception condition diganti  (done)
+- flow gk ada accept hrsnya (done)
+
+9. 
+- scenario diganti harusnya spesific di u[date (done)
+- trigerring blm sesuai harunya di cek dulu (done)
+- pre conditions jg msh blm sesuai (done)
+- post conditions di ganti jadi notify jangan ditulis udh fixed sapa tau gk bisa di fix (done)
+- Exception conditions di sesuain lagi 
+- Flow di ganti kalau misal gk ke fix
+10. 
+- related use case gk ada update harusnya (done)
+- pre conditions masih blm sesuai (done)
+- exception cari lagi (?)
+
+triggering -> knp use case di excecute
+preconditions -> kalo di excecute data apa yang diperluin
+
+Activity Diagram
+1. 
+- liat lagi sama use case desc
+
+2. 
+- bahasa customer choose schedule disesuain lagi
+- tambah voicher
+3. 
+- Notify seusain lagi
+4.
+- return jadi display
+5. 
+sama kayak no 1
+6. 
+ikutin use case harusnya
+7.
+sama no 1
+9.
+sesuain lagi
+10. 
+- kalo no loop lagi
+
+Sequence :
+1. 
+Gk ada manager dkk
+dari model ke controller
+data access
+reply knp dlm bentuk data
+2.
+view data access
+reply msg dibenerin
+3.
+Layer masih salah
+salah layernya
+
+4. 
+loopnya cari lagi yg gk maksa
+
+5. 
+layer 
+input output msg, sama reply
+
+6. 
+sama la
+
+7. 
+gk ada mati dan sisany 
+fragment msh salah
+OPT
+8. 
+salah layer
+i/o 
+satu blm mati
+fragment benerin lagi
+OPT
+
+9. 
+gk mati
+sisany sama la
+
+10.
++- sama
+
+Class Diagram
+- Manger tetep employee (generalization)
+- view revenue,expenses harusnya ada controller revenue controller
+- manage dkk dibenerin
+- admin benerin lagi
+- gk ush generate voucher
+- controller butuh auxiliary di steorytpe
+- ilangin menu 
+
+
