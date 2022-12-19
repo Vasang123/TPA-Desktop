@@ -1,0 +1,99 @@
+.create{
+    font-family :'Poppins';
+    position: absolute;
+    // top: 50%;
+    // left:50%;
+    // transform: translate(-50%,-50%);
+    justify-content: center;
+    width: 100%;
+    background-color: #FAF1E6;
+    // height : 100%;
+    display: flex;
+    justify-content : center;
+    .back{
+        position:absolute;
+        top: 0%;
+        left:1%;
+        button{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            margin-top: 2em;
+            background-color: white;
+            border : none;
+            padding: .5em;
+            border-radius: 5px;
+            color: black;
+            font-size: 18px;
+        }
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+    .form-container{
+        width:70%;
+        form{
+            font-size: 18px;
+            border-radius: 10px;
+            padding : 2em;
+            display : flex;
+            flex-direction : column;
+            label{
+                
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            input{
+                // margin-bottom: 20px;
+                border:none;
+                padding:20px;
+                border-radius: 5px;
+                height: 40px;
+            }
+            .genderContainer{
+                display:flex;
+                flex-direction:column;
+                .temp{
+                    display: flex;
+                    gap: 20px;
+                    align-items:center;
+                    input{
+                        transform: scale(1.5); 
+                    }
+                }
+               
+            }
+            textarea{
+                border:none;
+                border-radius: 5px;
+                height: 120px;
+                resize: none;
+                padding:20px;
+            }
+            button{
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                margin-top: 2em;
+                background-color: white;
+                border : none;
+                padding: .5em;
+                border-radius: 5px;
+                width: 10%;
+                // margin-left: .5em;
+    
+                color: black;
+                font-size: 18px;
+            }
+            button:hover{
+                background-color: #2DC1B0;
+                color: white;
+            }
+            span{
+                color: red;
+            }
+        }
+    }
+
+}

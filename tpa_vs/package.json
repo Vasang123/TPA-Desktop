@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^7.0.0",
     "@electron/remote": "^2.0.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,9 +13,12 @@
     "cross-env": "^7.0.3",
     "electron": "^22.0.0",
     "firebase": "^9.14.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.6.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-paginate": "^8.1.4",
+    "react-pro-sidebar": "^1.0.0-alpha.9",
     "react-router": "^6.4.5",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
@@ -22,15 +26,15 @@
     "web-vitals": "^2.1.4"
   },
   "main": "public/main.js",
-  "homepage": "./",
+  "homepage": "/login",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
-    "app": "concurrently  -k \"cross-env BROWSER=none yarn start\" \"npm run electron:start\"",
+    "app": "concurrently  -k \"cross-env yarn start\" \"yarn:electron\"",
     "electron:build": "",
-    "electron:start": "electron ."
+    "electron": "electron ."
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +53,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "sass": "^1.56.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

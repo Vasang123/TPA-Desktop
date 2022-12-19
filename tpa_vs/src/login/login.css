@@ -1,0 +1,95 @@
+.login-menu {
+  font-family: 'Poppins';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FDFAF6;
+  width: 35%;
+}
+
+.login-menu .form-container {
+  padding: 1em 1em 2em 1em;
+  border-radius: 10px;
+  background-color: #FAF1E6;
+}
+
+.login-menu .form-container .title {
+  font-size: .8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
+}
+
+.login-menu .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.login-menu .form-container form label {
+  font-size: 18px;
+  margin-left: .5em;
+  text-align: left;
+}
+
+.login-menu .form-container form input {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  padding: .5em 0;
+  margin: .5em;
+  width: 90%;
+}
+
+.login-menu .form-container form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+  background-color: white;
+  border: none;
+  padding: .5em;
+  border-radius: 5px;
+  width: 93%;
+  color: black;
+  font-size: 18px;
+}
+
+.login-menu .form-container form input {
+  padding-left: 1em;
+}
+
+.login-menu .form-container form button:hover {
+  background-color: #2DC1B0;
+  color: white;
+}
+
+.login-menu .form-container form span {
+  color: red;
+}
+/*# sourceMappingURL=login.css.map */
