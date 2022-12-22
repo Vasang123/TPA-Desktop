@@ -60,7 +60,7 @@
   width: 90%;
 }
 
-.login-menu .form-container form button {
+.login-menu .form-container form .temp button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,12 +84,18 @@
   padding-left: 1em;
 }
 
-.login-menu .form-container form button:hover {
+.login-menu .form-container form .temp button:hover {
   background-color: #2DC1B0;
   color: white;
 }
 
-.login-menu .form-container form span {
+.login-menu .form-container form .temp span {
   color: red;
+}
+.login-menu .form-container form .temp .temp2 span {
+  display :flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 /*# sourceMappingURL=login.css.map */

@@ -32,6 +32,7 @@ const CreateEmployee = () =>{
         errorDiv.innerHTML = error;
         return false;
     }
+
     const createEmployee = async (e) => {
         e.preventDefault();
         const auth = getAuth();
@@ -79,7 +80,8 @@ const CreateEmployee = () =>{
                         employeeId : docRef.id,
                         endTime : "17:00",
                         startTime : "09:00",
-                        status : "active"
+                        status : "active",
+   
                     };
                     addDoc(workingRef, workingPayload);
                 }
@@ -99,7 +101,7 @@ const CreateEmployee = () =>{
                 const errorMessage = error.message;
                 // ..
             });
-            // navigate("/view_employee")
+            navigate("/view_employee")
         }
         
     }
@@ -160,7 +162,7 @@ const CreateEmployee = () =>{
                     onChange={ (e) => setPassword(e.target.value)}/>
                     {error8 && <span>Password length must be greater than 6</span>}
 
-                    <button onClick={createEmployee}>Create</button>
+                    <button onClick={createEmployee}> Create </button>
                 </form>
             </div>
         </div>

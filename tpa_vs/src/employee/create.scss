@@ -18,13 +18,13 @@
             display:flex;
             align-items: center;
             justify-content:center;
-            margin-top: 2em;
+            margin-top: 1em;
             background-color: white;
             border : none;
             padding: .5em;
             border-radius: 5px;
             color: black;
-            font-size: 18px;
+            font-size: 13px;
         }
         button:hover{
             background-color: red;
@@ -34,22 +34,22 @@
     .form-container{
         width:70%;
         form{
-            font-size: 18px;
+            font-size: 13px;
             border-radius: 10px;
             padding : 2em;
             display : flex;
             flex-direction : column;
             label{
                 
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
             input{
                 // margin-bottom: 20px;
                 border:none;
                 padding:20px;
                 border-radius: 5px;
-                height: 40px;
+                height: 20px;
             }
             .genderContainer{
                 display:flex;
@@ -75,7 +75,7 @@
                 display:flex;
                 align-items: center;
                 justify-content:center;
-                margin-top: 2em;
+                margin-top: 1em;
                 background-color: white;
                 border : none;
                 padding: .5em;
@@ -84,7 +84,7 @@
                 // margin-left: .5em;
     
                 color: black;
-                font-size: 18px;
+                font-size: 13px;
             }
             button:hover{
                 background-color: #2DC1B0;

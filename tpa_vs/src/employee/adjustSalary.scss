@@ -1,0 +1,86 @@
+.adjust-salary-container{
+    font-family :'Poppins';
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    background-color: #FAF1E6;
+    min-height : 100vh;
+    display: flex;
+    justify-content : center;
+    .back{
+        position:absolute;
+        top: 0%;
+        left:1%;
+        button{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            margin-top: 1em;
+            background-color: white;
+            border : none;
+            padding: .5em;
+            border-radius: 5px;
+            color: black;
+            font-size: 13px;
+        }
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+    .form-container{
+        display:flex;
+        align-items:center;
+        width:100%;
+        justify-content:center;
+        form{
+            font-size: 13px;
+            border-radius: 10px;
+            padding : 2em;
+            display : flex;
+            flex-direction : column;
+            label{
+                
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            input{
+                // margin-bottom: 20px;
+                border:none;
+                padding:5px;
+                border-radius: 5px;
+                // height: 20px;
+            }
+            textarea{
+                border:none;
+                border-radius: 5px;
+                height: 120px;
+                resize: none;
+                padding:20px;
+            }
+            button{
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                margin-top: 1em;
+                background-color: white;
+                border : none;
+                padding: .5em;
+                border-radius: 5px;
+                width: 100%;
+                // margin-left: .5em;
+    
+                color: black;
+                font-size: 13px;
+            }
+            button:hover{
+                background-color: #2DC1B0;
+                color: white;
+            }
+            span{
+                color: red;
+            }
+        }
+    }
+
+}
