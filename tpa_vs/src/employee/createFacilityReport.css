@@ -1,0 +1,110 @@
+.facility-request {
+  font-family: 'Poppins';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.facility-request main {
+  width: 100%;
+  background-color: #FAF1E6;
+}
+
+.facility-request .form-container {
+  width: 100%;
+}
+
+.facility-request .form-container form {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.facility-request .form-container form label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.facility-request .form-container form select {
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.facility-request .form-container form input {
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.facility-request .form-container form .genderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.facility-request .form-container form .genderContainer .temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.facility-request .form-container form .genderContainer .temp input {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.facility-request .form-container form textarea {
+  border: none;
+  border-radius: 5px;
+  height: 120px;
+  resize: none;
+  padding: 20px;
+}
+
+.facility-request .form-container form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+  background-color: white;
+  border: none;
+  padding: .5em;
+  border-radius: 5px;
+  width: 10%;
+  color: black;
+  font-size: 13px;
+}
+
+.facility-request .form-container form button:hover {
+  background-color: #2DC1B0;
+  color: white;
+}
+
+.facility-request .form-container form span {
+  color: red;
+}
+/*# sourceMappingURL=createFacilityReport.css.map */

@@ -13,6 +13,7 @@ const CreateEmployee = () =>{
     const [address, setAddress] = useState("");
     const [salary, setSalary] = useState("");
     const [phone, setPhone] = useState("");
+    const [dob, setDob] = useState("");
     const [password, setPassword] = useState("");
     const [department, setDepartment] = useState("");
     const [error1, setError1] = useState(false);
@@ -70,7 +71,9 @@ const CreateEmployee = () =>{
                 department : department,
                 email : email,
                 phone : phone,
-                salary : salary
+                salary : salary,
+                dob : dob,
+                status : "active"
             };
             addDoc(collectionRef,payload).then(function (docRef) {
                 let i = 1;
@@ -130,11 +133,28 @@ const CreateEmployee = () =>{
                         </div>
                         {error2 && <span>Gender must be choosen</span>}
                     </div>
+                    
+                    <label htmlFor="dob">Date Of Birth</label>
+                    <input type="date" name ="dob" id="dob" 
+                    onChange={ (e) => setDob(e.target.value)}/>
+
 
                     <label htmlFor="department">Department</label>
-                    <input type="text" name ="department" id="department"
-                    onChange={ (e) => setDepartment(e.target.value)} />
-                    {error3 && <span>Department can't be empty</span>}
+                    <select onChange ={e => setDepartment(e.target.value)}>
+                        <option value =""></option>
+                        <option value ="Administrator">Administrator</option> 
+                        <option value ="Manager">Manager</option>
+                        <option value ="Accounting and Finance Department">Accounting and Finance Department</option>
+                        <option value ="HRD">HRD</option>
+                        <option value ="Promo And Event Department">Promo And Event Department</option>
+                        <option value ="Storage Department">Storage Department</option>
+                        <option value ="External Department">External Department</option>
+                        <option value ="Movie Front Office Division">Movie Front Office Division</option>
+                        <option value ="Schedule Division">Schedule Division</option>
+                        <option value ="Operation Division">Operation Division</option>
+                        <option value ="Cafe Front Office Department">Cafe Front Office Department</option>
+                        <option value ="Kitchen Division">Kitchen Division</option>
+                    </select>
                     
                     <label htmlFor="address">Address</label>
                     <textarea name ="address" id="address"

@@ -1,0 +1,128 @@
+.create-container{
+    font-family :'Poppins';
+    // position: absolute;
+    // justify-content: center;
+    width: 100%;
+    background-color: #FAF1E6;
+    min-height : 100vh;
+    padding : 3em;
+    // display: flex;
+    // justify-content : center;
+    .back{
+        position:absolute;
+        top: 0%;
+        left:1%;
+        button{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            margin-top: 1em;
+            background-color: white;
+            border : none;
+            padding: .5em;
+            border-radius: 5px;
+            color: black;
+            font-size: 13px;
+        }
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+    .form-container{
+        .seat-location{
+            // width: 40%;
+            padding: 2em;
+            display : grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto  auto auto auto auto auto auto;
+            column-gap: 2px;
+            row-gap: 10px;
+            .button-seat-active{
+                width: 40px;
+                height: 40px;
+                background-color: #90EE90;
+                // background-color: white;
+                border : none;
+                border-radius : 5px;
+                // margin : 3px;
+            }
+            .button-seat-disabled{
+                width: 40px;
+                height: 40px;
+                // background-color: #90EE90;
+                background-color: white;
+                border : none;
+                border-radius : 5px;
+                // margin : 3px;
+            }
+            .button-seat-booked{
+                width: 40px;
+                height: 40px;
+                background-color: red;
+                border : none;
+                border-radius : 5px;
+            }
+        }
+        // display:flex;
+        // align-items:center;
+        margin-top: 4em;
+        width:100%;
+        justify-content:center;
+        form{
+            h5, .card-number{
+                font-size:17px;
+            }
+            font-size: 13px;
+            border-radius: 10px;
+            padding : 2em;
+            display : flex;
+            flex-direction : column;
+            label{
+                
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            textarea{
+                border:none;
+                border-radius: 5px;
+                height: 120px;
+                resize: none;
+                padding:20px;
+            }
+            button{
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                margin-top: 1em;
+                background-color: white;
+                border : none;
+                padding: .5em;
+                border-radius: 5px;
+                width: 100%;
+                // margin-left: .5em;
+    
+                color: black;
+                font-size: 13px;
+            }
+            select{
+                border:none;
+                padding: 12px;
+                border-radius: 5px;
+                // height: 20px;
+                // font-size: 13px;
+            }
+            .button-container{
+                display: flex;
+                gap : 12px;
+            }
+            button:hover{
+                background-color: #2DC1B0;
+                color: white;
+            }
+            span{
+                color: red;
+            }
+        }
+    }
+
+}

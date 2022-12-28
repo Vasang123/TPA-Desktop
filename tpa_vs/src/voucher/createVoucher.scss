@@ -1,0 +1,107 @@
+.create{
+    font-family :'Poppins';
+    position: absolute;
+    // top: 50%;
+    // left:50%;
+    // transform: translate(-50%,-50%);
+    justify-content: center;
+    width: 100%;
+    background-color: #FAF1E6;
+    min-height : 100vh;
+    display: flex;
+    justify-content : center;
+    .back{
+        position:absolute;
+        top: 0%;
+        left:1%;
+        button{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            margin-top: 1em;
+            background-color: white;
+            border : none;
+            padding: .5em;
+            border-radius: 5px;
+            color: black;
+            font-size: 13px;
+        }
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+    .form-container{
+        margin-top : 7em;
+        width:70%;
+        form{
+            font-size: 13px;
+            border-radius: 10px;
+            padding : 2em;
+            display : flex;
+            flex-direction : column;
+            label{
+                
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            input{
+                // margin-bottom: 20px;
+                border:none;
+                padding:20px;
+                border-radius: 5px;
+                height: 20px;
+            }
+            .genderContainer{
+                display:flex;
+                flex-direction:column;
+                .temp{
+                    display: flex;
+                    gap: 20px;
+                    align-items:center;
+                    input{
+                        transform: scale(1.5); 
+                    }
+                }
+               
+            }
+            select{
+                border:none;
+                padding: 12px;
+                border-radius: 5px;
+                // height: 20px;
+                // font-size: 13px;
+            }
+            textarea{
+                border:none;
+                border-radius: 5px;
+                height: 120px;
+                resize: none;
+                padding:20px;
+            }
+            button{
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                margin-top: 1em;
+                background-color: white;
+                border : none;
+                padding: .5em;
+                border-radius: 5px;
+                width: 10%;
+                // margin-left: .5em;
+    
+                color: black;
+                font-size: 13px;
+            }
+            button:hover{
+                background-color: #2DC1B0;
+                color: white;
+            }
+            span{
+                color: red;
+            }
+        }
+    }
+
+}

@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { getFirestore, doc, setDoc } from "firebase/firestore";
 import {db} from '../firebase'
 import {collection, addDoc} from "firebase/firestore"
 import moment from "moment";
@@ -11,7 +10,7 @@ export default function AdjustSalary () {
     const [description, setDescription] = useState("");
     const [newSalary, setnewSalary] = useState("");
     let date = new Date();
-    let time =  moment().format("DD-MM-YYYY hh:mm:ss")
+    let time =  moment().format("YYYY-MM-DD")
     // console.log(location.state.id);
     // console.log(location.state.name);
     const navigate = useNavigate();

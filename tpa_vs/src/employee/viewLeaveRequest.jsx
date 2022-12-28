@@ -1,8 +1,8 @@
 
 import Navbar from '../navbar.jsx';
-import './viewLeaveRequest.scss'
 import { Link, useNavigate } from "react-router-dom";
 import { db } from '../firebase'
+import './viewLeaveRequest.scss'
 import {collection, getDocs} from 'firebase/firestore'
 import { useState, useEffect, useMemo } from 'react';
 import DataTable from 'react-data-table-component';
@@ -13,7 +13,7 @@ import {Button}  from 'react-bootstrap';
 import {Accept, Reject} from '../controller/optionController.jsx'
 import FilterComponent from "../FilterComponent";
 
-export default function ViewLeaveRequest() {
+export default function ViewFacilityReport() {
   const [leaveRequest, setLeaveRequest] = useState([]);
   const usersCollectionRef = collection(db , "leave request");
   const [pending, setPending] = useState(true);
@@ -41,36 +41,50 @@ export default function ViewLeaveRequest() {
   return () => clearTimeout(timeout);
   }, []);
   let i = 1;
-  const data = leaveRequest.map((lr) => ({
-      key : i++,
-      startDate : lr.startDate,
-      endDate : lr.endDate,
-      description : lr.description,
-      employeeName : lr.employeeName,
-      status : lr.status,
-      option :
-      <div className = "temp3">
-        
-      <OverlayTrigger
-        placement="top"
-        delay={{ show: 100, hide: 200 }}
-        overlay={renderTooltip}
-        >
-        <Button style ={{fontSize :"15px"}}
-        onClick={e => Accept(e,'leave request', lr.id, 'accepted')}> 
-        <i class="uil uil-check"></i></Button>
-      </OverlayTrigger>
-      <OverlayTrigger
+  let data = [];
+  leaveRequest.map((lr) => {
+    if(lr.status === 'pending' ){
+      data.push({
+        key : i++,
+        startDate : lr.startDate,
+        endDate : lr.endDate,
+        description : lr.description,
+        employeeName : lr.employeeName,
+        status : lr.status,
+        option :
+        <div className = "temp3">
+          
+        <OverlayTrigger
           placement="top"
           delay={{ show: 100, hide: 200 }}
-          overlay={renderTooltip2}
+          overlay={renderTooltip}
           >
-          <Button style ={{fontSize :"15px"}} className="btn-danger"
-          onClick={e => Reject(e,'leave request', lr.id, 'rejected')}> 
-          <i class="uil uil-times"></i></Button>
-      </OverlayTrigger>
-      </div>
-  }));
+          <Button style ={{fontSize :"15px"}}
+          onClick={e => Accept(e,'leave request', lr.id, 'accepted')}> 
+          <i class="uil uil-check"></i></Button>
+        </OverlayTrigger>
+        <OverlayTrigger
+            placement="top"
+            delay={{ show: 100, hide: 200 }}
+            overlay={renderTooltip2}
+            >
+            <Button style ={{fontSize :"15px"}} className="btn-danger"
+            onClick={e => Reject(e,'leave request', lr.id, 'rejected')}> 
+            <i class="uil uil-times"></i></Button>
+        </OverlayTrigger>
+        </div>  
+      })
+    }else{
+        data.push({
+            key : i++,
+            startDate : lr.startDate,
+            endDate : lr.endDate,
+            description : lr.description,
+            employeeName : lr.employeeName,
+            status : lr.status
+          })  
+    }
+  });
   const columns = [
       {
           name : "No",

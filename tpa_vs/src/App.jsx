@@ -22,6 +22,26 @@ import ViewSupplierDetails from './external/foodAndBeverage.jsx'
 import CreateSupplier from './external/createSupplier.jsx'
 import ViewAdvertisingDetails from './external/advertising.jsx'
 import CreateAdvertising from './external/createAdvertising.jsx'
+import CreateCommunication from './external/createCommunication.jsx'
+import ViewMember from './voucher/viewMember.jsx'
+import ViewVoucher from './voucher/viewVoucher.jsx'
+import CreateVoucher from './voucher/createVoucher.jsx'
+import ViewFacility from './storage/viewFacility.jsx'
+import ViewFund from './storage/viewFund.jsx'
+import PurchaseItem from './storage/purchaseItem.jsx'
+import ViewFacilityReport from './storage/facilityReport.jsx'
+import ViewMovieContract from './movie/viewMovieContract.jsx'
+import CreateSchedule from './movie/createSchedule.jsx'
+import ViewMovieSchedule from './movie/viewMovieSchedule.jsx'
+import UpdateMovieSchedule from './movie/updateMovieSchedule.jsx'
+import ViewSalaryAdjustment from './finance/viewSalaryAdjustment.jsx'
+import ViewFundRequest from './finance/viewFundRequest.jsx'
+import ViewPurchaseReport from './finance/viewPurchaseReport.jsx'
+import CreateMovieOrder from './movie/createMovieOrder.jsx'
+import CheckOutOrder from './movie/checkOutOrder.jsx'
+import UseVoucher from './movie/useVoucher.jsx'
+import UseMember from './movie/useMember.jsx'
+import ChoosePayment from './movie/choosePayment.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
     return (
@@ -49,6 +69,27 @@ function App() {
             <Route path='/create_supplier' element ={<CreateSupplier/>}></Route>
             <Route path='/view_advertising' element ={<ViewAdvertisingDetails/>}></Route>
             <Route path='/create_advertising' element ={<CreateAdvertising/>}></Route>
+            <Route path='/create_communication' element ={<CreateCommunication/>}></Route>
+            <Route path='/view_member' element ={<ViewMember/>}></Route>
+            <Route path='/view_promo' element ={<ViewVoucher/>}></Route>
+            <Route path='/create_voucher' element ={<CreateVoucher/>}></Route>
+            <Route path='/view_facility' element ={<ViewFacility/>}></Route>
+            <Route path='/view_fund' element ={<ViewFund/>}></Route>
+            <Route path='/purchase_item' element ={<PurchaseItem/>}></Route>
+            <Route path='/view_facility_report' element ={<ViewFacilityReport/>}></Route>
+            <Route path='/view_movie_contract' element ={<ViewMovieContract/>}></Route>
+            <Route path='/create_schedule' element ={<CreateSchedule/>}></Route>
+            <Route path='/view_schedule' element ={<ViewMovieSchedule/>}></Route>
+            <Route path='/update_movie_schedule' element ={<UpdateMovieSchedule/>}></Route>
+            <Route path='/view_salary_adjustment' element ={<ViewSalaryAdjustment/>}></Route>
+            <Route path='/view_fund_request' element ={<ViewFundRequest/>}></Route>
+            <Route path='/view_purchase_report' element ={<ViewPurchaseReport/>}></Route>
+            <Route path='/create_movie_order' element ={<CreateMovieOrder/>}></Route>
+            <Route path='/check_out_movie' element ={<CheckOutOrder/>}></Route>
+            <Route path='/use_voucher' element ={<UseVoucher/>}></Route>
+            <Route path='/use_member' element ={<UseMember/>}></Route>
+            <Route path='/choose_payment' element ={<ChoosePayment/>}></Route>
+            
         </Routes>
         </BrowserRouter>
     </ProSidebarProvider>

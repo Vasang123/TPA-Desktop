@@ -20,7 +20,7 @@ export default function CreateSupplier(){
         errorDiv.innerHTML = error;
         return false;
     }
-    let date = new Date();
+
     let time = moment().format("DD/MM/YYYY")
     const createSupplier = async (e) => {
             e.preventDefault();

@@ -56,38 +56,55 @@ export function EmployeeData(){
             }
         });
     };
-    const data = employee.map((employee) => ({
-        key : i++,
-        name : employee.name,
-        gender : employee.gender,
-        department :employee.department,
-        email: employee.email,
-        address : employee.address,
-        phone : employee.phone,
-        salary : employee.salary,
-        option : 
-        <div className="temp">
-            <OverlayTrigger
-            placement="top"
-            delay={{ show: 100, hide: 200 }}
-            overlay={renderTooltip}
-            >
-            <Button style ={{fontSize :"15px"}} className="btn-danger"
-            onClick = {event => changeToWarning(event, employee.id,employee.name)}> 
-            <i class="uil uil-exclamation-octagon"></i></Button>
-            </OverlayTrigger>
-            <OverlayTrigger
-            placement="top"
-            delay={{ show: 100, hide: 200 }}
-            overlay={renderTooltip2}
-            >
-            <Button style ={{fontSize :"15px"}} className="btn-success"
-            onClick = {event => changeToSalary(event, employee.id,employee.name, employee.salary)}> 
-            <i class="uil uil-usd-circle"></i></Button>
-            </OverlayTrigger>
-        </div>
-    }));
-
+    let data = [];
+    employee.map((employee) => {
+        if(employee.status === 'active'){
+            data.push({
+                key : i++,
+                name : employee.name,
+                gender : employee.gender,
+                department :employee.department,
+                email: employee.email,
+                address : employee.address,
+                phone : employee.phone,
+                dob : employee.dob,
+                salary : `Rp. ${employee.salary}`,
+                option : 
+                <div className="temp">
+                    <OverlayTrigger
+                    placement="top"
+                    delay={{ show: 100, hide: 200 }}
+                    overlay={renderTooltip}
+                    >
+                    <Button style ={{fontSize :"15px"}} className="btn-danger"
+                    onClick = {event => changeToWarning(event, employee.id,employee.name)}> 
+                    <i class="uil uil-exclamation-octagon"></i></Button>
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                    placement="top"
+                    delay={{ show: 100, hide: 200 }}
+                    overlay={renderTooltip2}
+                    >
+                    <Button style ={{fontSize :"15px"}} className="btn-success"
+                    onClick = {event => changeToSalary(event, employee.id,employee.name, employee.salary)}> 
+                    <i class="uil uil-usd-circle"></i></Button>
+                    </OverlayTrigger>
+                </div>
+            })
+        }
+    });
+    const ExpandedComponent = (data) => {
+        return (<div className ="data-expand">
+            <p>Name : {data["data"].name} </p>
+            <p>Gender : {data["data"].gender} </p>
+            <p>Department : {data["data"].department} </p>
+            <p>Email : {data["data"].email} </p>
+            <p>Address : {data["data"].address} </p>
+            <p>Phone : {data["data"].phone} </p>
+            <p>Date Of Birth : {data["data"].dob} </p>
+            <p>Salary : {data["data"].salary} </p>
+        </div>);
+    };
     const filteredItems = data.filter(
         item => item.name && item.name.toLowerCase().includes(filterText.toLowerCase())
     );
@@ -113,19 +130,13 @@ export function EmployeeData(){
             name : "No",
             selector : (row) => row.key,
             align : "center",
+            width : "70px"
             // cell: row => <div style={{fontSize: 10}}>{row.id}</div>
         },
         {
             name : "Name",
             selector : (row) => row.name,
             align  : "center",
-            editable : true,
-            sortable : true
-        },
-        {
-            name : "Gender",
-            selector : (row) => row.gender,
-            align : "center",
             editable : true,
             sortable : true
         },
@@ -137,35 +148,18 @@ export function EmployeeData(){
             sortable : true
         },
         {
-            name : "Email",
-            selector : (row) => row.email,
-            align : "center",
-            editable : true,
-        },
-        {
-            name : "Address",
-            selector : (row) => row.address,
-            align : "center",
-            editable : true,
-        },
-        {
-            name : "Phone",
-            selector : (row) => row.phone,
-            align : "center",
-            editable : true,
-        },
-        {
             name : "Salary",
             selector : (row) => row.salary,
             align : "center",
             editable : true,
-            sortable : true
+            sortable : true,
         },
         {
             name : "Option",
             selector : (row) => row.option,
             align : "center",
             editable : true,
+            // width : "120px"
             // sortable : true
         },
     ];
@@ -192,6 +186,8 @@ export function EmployeeData(){
             defaultSortField="name"
             subHeader
             subHeaderComponent={subHeaderComponent}
+            expandableRows 
+            expandableRowsComponent={ExpandedComponent}
         />
         </div >
     );

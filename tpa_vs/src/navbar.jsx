@@ -59,7 +59,45 @@ function Navbar(){
                     return (
                       <div>
                         {/* <MenuItem > <i className="uil uil-crockery"></i> Create Food Order </MenuItem> */}
-                        <MenuItem > <i className="uil uil-film"></i> Create Movie Order </MenuItem>
+                        <MenuItem routerLink={<Link to="/view_schedule" />}> <i class="uil uil-clapper-board"></i> View Movie Schedule </MenuItem>
+                        
+                      </div>
+                    )
+                  }else if (employee.department === 'Promo And Event Department') {
+                    return (
+                      <div>
+                        {/* <MenuItem > <i className="uil uil-crockery"></i> Create Food Order </MenuItem> */}
+                        <MenuItem routerLink={<Link to="/view_promo" />}> <i class="uil uil-ticket"></i> View Promo </MenuItem>
+                        <MenuItem routerLink={<Link to="/view_member" />}> <i class="uil uil-users-alt"></i> View Membership </MenuItem>
+                        
+                      </div>
+                    )
+                  }else if (employee.department === 'Schedule Division') {
+                    return (
+                      <div>
+                        {/* <MenuItem > <i className="uil uil-crockery"></i> Create Food Order </MenuItem> */}
+                        <MenuItem routerLink={<Link to="/view_schedule" />}> <i class="uil uil-clapper-board"></i> View Movie Schedule </MenuItem>
+                        <MenuItem routerLink={<Link to="/view_movie_contract" />}> <i class="uil uil-users-alt"></i> View Movie Contract </MenuItem>
+                        
+                      </div>
+                    )
+                  }else if (employee.department === 'Accounting and Finance Department') {
+                    return (
+                      <div>
+                        {/* <MenuItem > <i className="uil uil-crockery"></i> Create Food Order </MenuItem> */}
+                        <MenuItem routerLink={<Link to="/view_salary_adjustment" />}> <i class="uil uil-money-withdraw"></i> View Salary Adjustment </MenuItem>
+                        <MenuItem routerLink={<Link to="/view_fund_request" />}> <i class="uil uil-money-withdraw"></i> View Fund Request </MenuItem>
+                        <MenuItem > <i class="uil uil-university"></i> Calculate Taxes </MenuItem>
+                        <MenuItem routerLink={<Link to="/view_purchase_report" />}> <i class="uil uil-file-medical-alt"></i> View Purchase Report </MenuItem>  
+                      </div>
+                    )
+                  }else if (employee.department === 'Storage Department') {
+                    return (
+                      <div>
+                        {/* <MenuItem > <i className="uil uil-crockery"></i> Create Food Order </MenuItem> */}
+                        <MenuItem routerLink={<Link to="/view_facility" />}> <i class="uil uil-cube"></i> View Facility And Equipment </MenuItem>
+                        <MenuItem routerLink={<Link to="/view_fund" />}> <i class="uil uil-usd-circle"></i> View Fund Request </MenuItem>
+                        <MenuItem routerLink={<Link to="/view_facility_report" />}> <i class="uil uil-file-graph"></i> View Facility Report </MenuItem>
                         
                       </div>
                     )
@@ -67,11 +105,10 @@ function Navbar(){
                     return (
                       <div>
                         {/* <MenuItem > <i className="uil uil-crockery"></i> Create Food Order </MenuItem> */}
-                        <MenuItem > <i class="uil uil-comment-alt-lines"></i> Record Communication </MenuItem>
+                        <MenuItem routerLink={<Link to="/create_communication"/>}> <i class="uil uil-comment-alt-lines"></i> Record Communication </MenuItem>
                         <MenuItem routerLink={<Link to="/view_movie_details" />}> <i class="uil uil-film"></i> Movie Producers </MenuItem>
                         <MenuItem routerLink={<Link to="/view_supplier" />}> <i class="uil uil-utensils-alt"></i> Food And Beverages Supplier </MenuItem>
                         <MenuItem routerLink={<Link to="/view_advertising" />}> <i class="uil uil-lottiefiles"></i> Advertising Partners </MenuItem>
-                        <MenuItem > <i class="uil uil-file-medical-alt"></i> External Report </MenuItem>
                         
                       </div>
                     )

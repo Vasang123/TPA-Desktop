@@ -51,6 +51,15 @@
                 padding:20px;
                 border-radius: 5px;
                 height: 20px;
+                
+            }
+            input::file{
+                // margin-bottom: 20px;
+                // border:none;
+                
+                padding:20px;
+                border-radius: 5px;
+                height: 20px;
             }
             .genderContainer{
                 display:flex;

@@ -64,7 +64,7 @@ export default function CreateAdvertising(){
                     <input type="date" name ="startd-date" id="start-date" 
                     onChange={ (e) => setStartDate(e.target.value)}/>
 
-                    <label htmlFor="end-date">Start Date</label>
+                    <label htmlFor="end-date">End Date</label>
                     <input type="date" name ="end-date" id="end-date" 
                     onChange={ (e) => setEndDate(e.target.value)}/>
 

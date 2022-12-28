@@ -10,3 +10,25 @@
     display : flex;
     gap : 12px;
 }
+.data-expand{
+    margin-right : 160px;
+    margin-left : 50px;
+    margin-top : 32px;
+    display:flex;
+    font-family : 'Poppins';
+    font-size : 13px;
+    gap : 7px;
+    flex-direction : column;
+    p{
+        padding : 5px;
+        border-bottom : 1px solid black;
+        display : flex;
+        justify-content : space-between;
+        gap : 200px;
+    }
+    img{
+        width : 300px;
+    
+    }
+    
+}

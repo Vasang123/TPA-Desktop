@@ -1,0 +1,12 @@
+.view-data{
+    font-family : 'Poppins';
+    display:flex;
+    min-height : 100vh;
+    main{
+        width: 100%;
+    }
+    .temp{
+        display:flex;
+        gap : 12px;   
+    }
+}

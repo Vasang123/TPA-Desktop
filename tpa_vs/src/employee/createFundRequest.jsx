@@ -14,7 +14,7 @@ export default function CreateFundRequest() {
     const navigate = useNavigate();
 
     let date = new Date();
-    let time =  moment().format("DD-MM-YYYY hh:mm:ss")
+    let time =  moment().format("DD-MM-YYYY")
     useEffect(() => {
         const employee = JSON.parse(sessionStorage.getItem('employee'));
         setEmployee(employee);
@@ -26,7 +26,9 @@ export default function CreateFundRequest() {
             date : time,
             description : description,
             employeeId : employee.id,
+            employeeName : employee.name,
             price : price,
+            fund : 0,
             quantity : quantity,
             status1  : "pending",
             status2 : "pending"
